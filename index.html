@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mobile Menu</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="favicon.png" type="images/x-icon">
+        
+    </head>
+    <body>
+        <div class="mobile">
+            <header>
+                <div class="logo">
+                    <p>LOGO</p>
+                </div>
+                <a href="javascript:void(0)" class="menu-icon" onclick="toogle()">
+                    <div class="menu-icon">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </a>
+            </header>
+            <nav id="links">
+                <ul>
+                    <li><a href="/" target="_blank">Home</a></li>
+                    <li><a href="/about.html" target="_blank">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                    <li><a href="/blog.html" target="_blank">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="gif">
+                <video src="https://cdn.pixabay.com/video/2020/04/08/35427-407130886_large.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+
+        <script>
+            function toogle() {
+              var ele = document.getElementsByTagName("nav")[0];
+              if (ele.style.display === "block") {
+                ele.style.display = "none";
+              } else {
+                ele.style.display = "block";
+              }
+            }
+        </script>
+    </body>
+</html>
